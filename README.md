@@ -71,7 +71,7 @@ c.toString(); // '1.5 - i3'
 c.toString('j'); // '1.5 - j3'
 ```
 
-## Make an Array
+## Making an Array
 ```ts
 let c = new Complex({real: 1.5, imag: -3});
 let array = c.toArray(); // [1.5, -3]
