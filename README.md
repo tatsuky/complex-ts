@@ -60,12 +60,12 @@ let c3 = c1.divide(c2);
 let c2 = c1.conjugate();
 ```
 
-### Absolute
+### Absolute Value
 ```ts
 let c2 = c1.absolute();
 ```
 
-### Swap
+### Swapping
 ```ts
 let c1 = new Complex({real: 1.5, imag: -3});
 let c2 = c1.swap(); // Represents -3 + i1.5
