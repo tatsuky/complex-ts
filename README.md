@@ -92,3 +92,6 @@ c.toString('j'); // '1.5 - j3'
 let c = new Complex({real: 1.5, imag: -3});
 let array = c.toArray(); // [1.5, -3]
 ```
+
+## Liscense
+MIT
