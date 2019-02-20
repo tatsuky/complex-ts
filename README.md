@@ -13,7 +13,7 @@ let c1 = new Complex({real: 3, imag: -2.55});
 // Initialize with a polar coordinate
 let c2 = new Complex({radius: 3, arg: Math.PI / 4});
 ```
-After initialization only `real` and `imag` properties can be accessed publicly.
+After initialization only the `real` and `imag` property can be accessed publicly.
 
 ## Basic Arithmetics
 Note that in the below examples `c1` and `c2` are not affected by the arithmetics.
@@ -59,7 +59,7 @@ let c2 = c1.swap(); // Represents -3 + i1.5
 ```ts
 let c2 = c1.copy();
 ```
-This generates a different Complex object with the same `real` and `imag` properties.
+This generates a new Complex object with the same `real` and `imag` properties.
 
 ## Stringify
 ```ts
