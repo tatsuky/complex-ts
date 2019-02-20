@@ -13,7 +13,23 @@ let c1 = new Complex({real: 3, imag: -2.55});
 // Initialize with a polar coordinate
 let c2 = new Complex({radius: 3, arg: Math.PI / 4});
 ```
-After initialization only the `real` and `imag` property can be accessed publicly.
+
+After initialization, `real`, `imag`, `radius` and `arg` property can be accessed publicly.
+
+## Updating Values
+```ts
+let c1 = new Complex({real: 3, imag: -2.55});
+
+console.log(c1.toString()); // 3 - i2.55
+
+// Update values
+c1.real = 1;
+c1.imag = 3;
+
+console.log(c1.toString()); // 1 + i3
+```
+
+For example, if you change the `real` and `imag` property, the corresponding values for `radius` and `arg` will be computed and assigned immediately. Same applies for `radius` and `arg` (or even just one of which).
 
 ## Basic Arithmetics
 Note that in the below examples `c1` and `c2` are not affected by the arithmetics.
